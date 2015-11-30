@@ -10,7 +10,8 @@
 	    <meta name="MobileOptimized" content="320" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	    <link rel="canonical" href="index.html" />
-    
+    <meta name="referrer" content="origin" />
+
     <meta property="og:site_name" content="Tankred's Blog" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Heartbleed and JavaScript Crypto" />
@@ -18,12 +19,12 @@
     <meta property="og:url" content="http://tankredhase.com/2014/04/13/heartbleed-and-javascript-crypto/" />
     <meta property="article:published_time" content="2014-04-13T12:26:00.000Z" />
     <meta property="article:modified_time" content="2014-05-04T11:11:29.000Z" />
-    
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Heartbleed and JavaScript Crypto" />
     <meta name="twitter:description" content="Reading the news on Heartbleed in the mainstream media these days got me thinking. It&#x27;s hard enough to grasp the consequences as a technical person, but trying to explain to my girlfriend why she might want to change the passwords..." />
     <meta name="twitter:url" content="http://tankredhase.com/2014/04/13/heartbleed-and-javascript-crypto/" />
-    
+
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -32,10 +33,10 @@
     "author": {
         "@type": "Person",
         "name": "Tankred Hase",
-        "image": "http://tankredhase.com/content/images/2014/Apr/Foto-am-08-04-12-um-08-45--2.jpg",
-        "url": "http://tankredhase.com/author/tankred-hase",
-        "sameAs": "https://twitter.com/tankredhase",
-        "description": "Tankred is a JavaScript developer from Munich, Germany. He loves working in open source and co-founded whiteout.io, where he works on making email encryption easier to use."
+        "image": "//www.gravatar.com/avatar/24d4bcd5eb54f6316352b95851aabe1b?s=250&d=mm&r=x",
+        "url": "http://tankredhase.com/author/tankred",
+        "sameAs": null,
+        "description": null
     },
     "headline": "Heartbleed and JavaScript Crypto",
     "url": "http://tankredhase.com/2014/04/13/heartbleed-and-javascript-crypto/",
@@ -45,7 +46,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.6" />
+    <meta name="generator" content="Ghost 0.7" />
     <link rel="alternate" type="application/rss+xml" title="Tankred&#x27;s Blog" href="../../../../rss/index.html" />
 	    <script type='text/javascript'>//<![CDATA[
 	    	var disqus = {
@@ -69,7 +70,7 @@
                 <a href="https://twitter.com/tankredhase" title="Twitter" target="_blank">&#x6b;</a>
                 <a href="https://github.com/tanx" title="GitHub" target="_blank">&#x6e;</a>
                 <a href="https://www.linkedin.com/pub/tankred-hase/55/416/51a" title="LinkedIn" target="_blank">&#x6d;</a>
-                <a href="../../../../rss/index.html" title="RSS feed">&#x76;</a>
+                <a href="mailto:info@tankredhase.de" title="Email" style="vertical-align: middle; line-height: 1.9em; font-weight: bold;">&#x40;</a>
             </div>
         </div>
     </div>
@@ -127,7 +128,7 @@
 
 <h3 id="servicesyoutrustwithyourdata">Services you trust with your data</h3>
 
-<p>I will use an example here. Elster is a system used by the German government which lets citizens do their taxes online. You can visit it at <a href='https://www.elsteronline.de'>https://www.elsteronline.de</a>. What most people don't know is that Elster uses JS crypto to authenticate users with a passphrase protected Elster certificate which is decrypted in the browser. Before the crypto trolls start getting hungry, let me explain why this makes perfect sense.</p>
+<p>I will use an example here. Elster is a system used by the German government which lets citizens do their taxes online. You can visit it at <a href="https://www.elsteronline.de">https://www.elsteronline.de</a>. What most people don't know is that Elster uses JS crypto to authenticate users with a passphrase protected Elster certificate which is decrypted in the browser. Before the crypto trolls start getting hungry, let me explain why this makes perfect sense.</p>
 
 <ol>
 <li><p><strong>You trust Elster with your tax data and therefor it's ok to trust their web server for authentication.</strong> This is not a zero knowledge type application where you're trying to protect your data from a service provider. The user does not want to protect his data from Elster. It is actually Elster that wants to verify that you are the person with the corresponding tax identifier.</p></li>
@@ -208,9 +209,9 @@
 
 	    </div>
 
-	    <script src="../../../../public/jquery.min.js?v=fc6155658c"></script>
+	    <!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 	    <script type='text/javascript' src='../../../../assets/js/scripts.min.js'></script>
-	<img src="https://tankredhase.com/view.gif?page=/2014/04/13/heartbleed-and-javascript-crypto/" alt="" style="display:none" hidden />
-</body>
+	</body>
 </html>

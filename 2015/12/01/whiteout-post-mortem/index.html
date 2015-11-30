@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+	    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <title>Whiteout Post Mortem</title>
+	    <meta name="description" content="" />
+	    <link rel="stylesheet" type="text/css" href="../../../../assets/css/style.css" />
+	    <meta name="HandheldFriendly" content="True" />
+	    <meta name="MobileOptimized" content="320" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="origin" />
+
+    <meta property="og:site_name" content="Tankred's Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Whiteout Post Mortem" />
+    <meta property="og:description" content="This post is not an official statement from Whiteout Networks, but rather my own personal views on the market for consumer email privacy and some things I&#x27;ve learned about this space in recent years. Sadly, as announced on the official..." />
+    <meta property="og:url" content="http://tankredhase.com/2015/12/01/whiteout-post-mortem/" />
+    <meta property="article:published_time" content="2015-11-30T17:59:00.000Z" />
+    <meta property="article:modified_time" content="2015-11-30T18:40:42.019Z" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Whiteout Post Mortem" />
+    <meta name="twitter:description" content="This post is not an official statement from Whiteout Networks, but rather my own personal views on the market for consumer email privacy and some things I&#x27;ve learned about this space in recent years. Sadly, as announced on the official..." />
+    <meta name="twitter:url" content="http://tankredhase.com/2015/12/01/whiteout-post-mortem/" />
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Tankred's Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Tankred Hase",
+        "image": "//www.gravatar.com/avatar/24d4bcd5eb54f6316352b95851aabe1b?s=250&d=mm&r=x",
+        "url": "http://tankredhase.com/author/tankred",
+        "sameAs": null,
+        "description": null
+    },
+    "headline": "Whiteout Post Mortem",
+    "url": "http://tankredhase.com/2015/12/01/whiteout-post-mortem/",
+    "datePublished": "2015-11-30T17:59:00.000Z",
+    "dateModified": "2015-11-30T18:40:42.019Z",
+    "description": "This post is not an official statement from Whiteout Networks, but rather my own personal views on the market for consumer email privacy and some things I&#x27;ve learned about this space in recent years. Sadly, as announced on the official..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7" />
+    <link rel="alternate" type="application/rss+xml" title="Tankred&#x27;s Blog" href="../../../../rss/index.html" />
+	    <script type='text/javascript'>//<![CDATA[
+	    	var disqus = {
+	    		'activate' : true,
+	    		'shortname' : 'tankredhase'
+	    	};
+	    //]]></script>
+    </head>
+    <body class="post-template">
+        <div class="site">
+
+	    	<header class="sidebar-header">
+
+    <div class="first">
+        <div class="header-content">
+            <a class="blog-title" href="../../../../index.html" title="Tankred&#x27;s Blog">
+                Tankred&#x27;s Blog
+                <span class="byline"></span>
+            </a>
+            <div class="social-icons">
+                <a href="https://twitter.com/tankredhase" title="Twitter" target="_blank">&#x6b;</a>
+                <a href="https://github.com/tanx" title="GitHub" target="_blank">&#x6e;</a>
+                <a href="https://www.linkedin.com/pub/tankred-hase/55/416/51a" title="LinkedIn" target="_blank">&#x6d;</a>
+                <a href="mailto:info@tankredhase.de" title="Email" style="vertical-align: middle; line-height: 1.9em; font-weight: bold;">&#x40;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="second">
+        <a class="expander" title="Show menu">
+        	<div class="expand"><span class="icon"></span>Menu</div>
+        	<div class="collapse"><span class="icon collapse"></span>Collapse</div>
+        </a>
+		<!--div class="cover-wrapper">
+			<img class="cover" src="" alt="" title="" />
+		</div-->
+        <ul class="main-menu">
+            <li class="menu-item">
+                <a href="../../../../index.html">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="../../../../about/index.html">About me</a>
+            </li>
+        </ul>
+    </div>
+
+</header>
+<section class="page-content primary" role="main">
+
+
+		<article id="post-5" class="post post" role="article" itemscope itemtype="http://schema.org/Article">
+
+			<div class="post-thumbnail">
+		    	<p><strong></strong></p>
+		    </div>
+
+		    <div class="content-wrapper">
+			    <h2 class="post-title">
+			    	Whiteout Post Mortem
+			    </h2>
+
+			    <div class="post-meta">
+					Posted
+					<span datetime="2015-12-01" itemprop="datePublished">
+						Tuesday, 01 Dec
+					</span>
+						by Tankred Hase
+				</div>
+
+			    <div class="post-content" itemprop="articleBody">
+
+					<p><strong>This post is not an official statement from Whiteout Networks, but rather my own personal views on the market for consumer email privacy and some things I've learned about this space in recent years.</strong></p>
+
+<p>Sadly, <a href="https://blog.whiteout.io/2015/11/30/end-of-life-for-whiteout-key-service-action-required/">as announced on the official whiteout.io blog</a>, we will be shutting down the service. Unfortunately after almost three years of work, we were not able to achieve relevant traction in the marketplace in order to justify ongoing operations to our users and our investors.</p>
+
+<h2 id="themarketforemailprivacy">The Market for Email Privacy</h2>
+
+<p>When we started whiteout in the beginning of 2013 we asked ourselves which market we should focus on - the consumer or the business market. Keep in mind this was before the summer of Snowden and the NSA revelations. So the decision was not at all obvious.</p>
+
+<h3 id="thebusinessmarket">The Business Market</h3>
+
+<p>Our basic assessment of the business market was that there are already many established players offering very mature solutions. Most notably Microsoft's Exchange and Outlook which include built in SMIME encryption as well as comprehensive administration/management options for SMBs as well as large enterprises. There are also numerous PGP/SMIME gateway solutions out there e.g. Symantec's PGP Universal Server that allows companies to centrally manage encryption and keys.</p>
+
+<p>Entering this space as a startup seemed like jumping into a fishtank full of sharks. Like they say „you don’t get fired for buying IBM“. So why would any company buy a service from a startup that might be gone in a few years, if there are already many great solutions out there from established players such as Microsoft. Our conclusion was to stay away from this market segment and try our luck in the consumer market first.</p>
+
+<h3 id="theconsumermarket">The Consumer Market</h3>
+
+<p>Shortly after the Snowden revelations we decided to make a bet on the consumer privacy market. At the time it seemed obvious, that everyone would start encrypting their email now that we knew everything is being stored indefinitely for later analysis by the NSA. <strong>Boy were we wrong.</strong></p>
+
+<h2 id="privacyisafeaturenotaproduct">Privacy is a Feature not a Product</h2>
+
+<p>Most users aren’t willing to switch their email address or mail client just because of privacy. It simply isn't that much of a priority to most users. Much more important are design, ease-of-use, functionality, reliability and performance. You could argue that this is a sad fact of life, but it’s also very understandable. People are very good at assessing their own personal threat models. Now while having all your data scooped up by the NSA sounds terrifying to us techies, most people see little to no immediate threat in that. There are simply more important things to worry about in everyday life like financial security, the health and well-being of your family, walking the dog, or showing off to your friends by posting a recent selfie on facebook. We are after all human beings with real life concerns and data privacy simply isn't at the top of our list.</p>
+
+<p>If there is one thing I've learned it is that privacy and security does not drive behaviour. Users will only adopt encryption at a mass scale if the encryption is built into the guts of an existing product that they and most of their friends already use. A good example of this is the recent addition of end-to-end encryption in WhatsApp which has about 800 million monthly active users. Most of those users will probably never know that they have been upgraded to Moxie's Axolotl protocol under the hood. Which is actually great because encryption is not supposed to get in the user's way.</p>
+
+<h2 id="encryptedmailproviders">Encrypted Mail Providers</h2>
+
+<p>After Snowden, several startups for mail encryption started to emerge. Competition is always a good sign in a marketplace, because it increases the overall quality of available choices for consumers and being the only startup in a certain space can be quite hard because you cannot try every approach at once with limited resources. Watching and learning from your competition can help greatly. It's in this spirit that I talk about the following competitors. But I've never actually seen them as competition, since the market for consumer privacy is still so small and immature. I read the following quote on twitter once and it really stuck with me: <em>"the biggest threat to your startup is not your competition, but rather nobody giving a shit"</em>. So true!</p>
+
+<p>One thing that's interesting to point out, is that almost all startups and projects in the email encryption space are from German speaking countries. Most notably Werner Koch of GPG, Thomas Oberndörfer of Mailvelope, and the Enigmail developers Patrik and Nico. It seems that given our history in east Germany and the Stasi, we happen to be the most paranoid when it comes to surveillance.</p>
+
+<h3 id="whiteout">Whiteout</h3>
+
+<p>Before analysing the competion, let's take a long hard look in the mirror. Whiteout had about 13.000 users when we shut down the service. Now keep in mind that these are total signups and not monthly active users. We don't know for certain what the numbers for all competitors are, but if not mentioned I estimate it to be roughly in the same ballpark as our user count.</p>
+
+<h3 id="lavaboom">Lavaboom</h3>
+
+<p>A German startup from Berlin. These guys put down a promising start and received considerable media attention. When they announced their bankruptcy and shutdown of the service, I could only too well understand what they were going through at the time.</p>
+
+<h3 id="tutanota">Tutanota</h3>
+
+<p>Another German startup. Still alive and also received considerable media attention in the tech press.</p>
+
+<h3 id="protonmail">Protonmail</h3>
+
+<p>This startup was started by students at MIT and CERN. They like to advertise their Swiss roots more prominently though because Switzerland has similarly strong privacy laws as Germany. Perhaps even stronger due to Switzerland's banking sector and corporate interests that are very much in favor of strong privacy laws.</p>
+
+<p>These guys received the most media attention of any startup that's on my radar screen. They were covered by TechCrunch several times and even appeared on FOX news (yes, FOX news). Their <a href="http://techcrunch.com/2015/08/18/protonmail-v2/">last report</a> was that they had about 500.000 signups and raised an impressive 2 million from investors.</p>
+
+<h2 id="backofthenapkinbusinessmodelcalculation">Back of the Napkin Business Model Calculation</h2>
+
+<p>Now let's look at those numbers. If we take the Protonmail signups and add the user base from the other startups (which I estimate in all to be lower than that of what Protonmail has), we get around 1 million users in the email privacy market. Now keep in mind that number means signups, not active users. So if we estimate about 10% of users being active (which is very optimistic), we get about 100.000 users actually encrypting their emails using at least one of the above mentioned services.</p>
+
+<p>Next, because we’re for-profit startups, we need to monetize those users. Since we can't fall back to an ad-based model due to the privacy nature of our businesses, we have to rely on paid subscriptions. And here's where the numbers don't add up. Since we only have about 100k active users, we have to try to convert a large number of those users to paying customers. Even if we converted 5% of those users (which again is very optimistic), we would have about 5.000 paying customers. Now given that email is such a commodity and there are already so many good and full featured services out there for free, we can't charge too much to stay competitive. Basically our premium packages will be between 1 and 5 bucks per user per month, depending on the feature set. For argument's sake let's assume that a premium user will generate an average of 2,5 bucks per month. We will then end up with a potential of 12.500 bucks per month of revenue. This is the pie that all startups in this space share.</p>
+
+<p>Our burn rate at whiteout was about 30K per month so we would have needed considerably more revenue to achieve cash flow break even. The alternative here was obviously to raise more money, but it was very hard to convince series A investors that the consumer market for email privacy was big enough to justify the investment. The economics simply don't make sense for such a niche market. At least from a VC's point of view that invests several millions expecting a multiple of that in return.</p>
+
+<p>Having said that, this is just an estimated snapshot of the current market. There is no reason that this could not change. But without considerable changes in user behavior, I wouldn't bet the barn on it.</p>
+
+<h2 id="openvsclosedsystems">Open vs. Closed Systems</h2>
+
+<p>This brings us to the predicament for the email privacy space. Email is based on open standards such as SMTP. There are many different flavors of mail clients out there and people often just use their OS's stock mail app since it usually does the trick. The problem here is that even if I decide to use email encryption, I still have to convince my contacts to install encryption on their device. Otherwise I cannot send end-to-end encrypted messages to them. This adds a lot of friction for startups that want to utilize email's viral potential to grow their user base.</p>
+
+<p>On the other hand there are closed systems like the above mentioned WhatsApp. From a user’s perspective these systems have the downside of missing interoperability and vendor lock-in, but they also have one big advantage. New features such as end-to-end encryption are much easier to add in an update. This is because vendors control the full stack for all users including the client app, which is where the encryption needs to happen.</p>
+
+<p>There is one system that I want to point out here that is kind of in between. <a href="https://whispersystems.org/blog/just-signal/">Signal by Open Whisper Systems</a> is used mainly by enthusiasts and activists. They open sourced their code and the Axolotl protocol specification, but it's still not quite the same as having an interoperable open standard like SMTP. So in this regard it's still a closed system. Even though the protocol definitely has what it takes to become the next de facto standard for encrypted asynchronous messaging. WhatsApp and Silent Circle have adopted the protocol for their apps and there seems to be broad agreement among security experts that it’s currently the state of the art.</p>
+
+<h2 id="willthereeverbeopenendtoendencryptedmessagingatamassscale">Will there ever be open end-to-end encrypted messaging at a mass scale?</h2>
+
+<p>The question remains, is it feasible that end-to-end encryption will be adopted at mass scale for an open system such as email. The answer isn't obvious.</p>
+
+<p>Perhaps if a new product/protocol comes along that becomes the new de facto standard and already happens to have encryption built in. But that new protocol will have to be much better at certain things than SMTP to drive adoption. But don’t hold your breath. SMTP is here to stay, at least for the foreseeable future, simply because it’s already good enough for most users.</p>
+
+<h1 id="whatwillhappenwiththeopensourcewhiteoutmailclient">What will happen with the open source Whiteout Mail client?</h1>
+
+<p>Since our <a href="https://github.com/whiteout-io/mail-html5">mail client</a> and our <a href="http://emailjs.org/">email.js (IMAP/SMTP/MIME) libraries</a> are open source and MIT licensed we would like to continue those in a community supported nonprofit context. Even though the business model didn't work out, this doesn't mean that we aren't proud of what we have built and there is no reason we need to kill the client app.</p>
+
+<p>Since we've been working closely with the <a href="https://www.mailvelope.com/">Mailvelope</a> team from the beginning on common libraries like <a href="https://github.com/openpgpjs/openpgpjs/">OpenPGP.js</a>, we've been exploring the idea of combining our efforts in order to bring our cross platform app and the Mailvelope extension together under one roof. The details have yet to be worked out and we're not yet sure how big the community interest is for such a move. So we'd love to hear your feedback and thoughts on this. </p>
+
+<p>I want to thank everyone who supported and believed in us during the past few years. Even though the business model didn't work out, we still learned a lot and it was a privilege to be able to work with so many talented people on such a hard problem.</p>
+
+				</div>
+
+			    <aside class="post-aside">
+
+					<div id="disqus_thread" class="comments"></div>
+					<script type="text/javascript">//<![CDATA[
+						if ( disqus.activate ) {
+						    var disqus_shortname = disqus.shortname;
+							var disqus_identifier = '5';
+
+						    /* * * DON'T EDIT BELOW THIS LINE * * */
+						    (function () {
+								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							}());
+					    }
+					//]]></script>
+
+			    </aside>
+
+			</div>
+
+		</article>
+
+
+	<div class="site-footer">
+	<div class="footer-text">&copy; Copyright 2014 <a href="../../../../index.html">Tankred&#x27;s Blog</a>, all rights reserved.</div>
+</div>
+</section>
+
+	    </div>
+
+	    <!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	    <script type='text/javascript' src='../../../../assets/js/scripts.min.js'></script>
+	</body>
+</html>

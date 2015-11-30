@@ -1,7 +1,3 @@
 User-agent: *
 Sitemap: http://tankredhase.com/sitemap.xml
 Disallow: /ghost/
-
-
-User-agent: *
-Disallow: /view.gif
